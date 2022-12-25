@@ -11,19 +11,38 @@
 </head>
 
 <body>
+
+    <div id="alert"></div>
+    
     <h1 id="title">Hello cnm</h1>
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-8 offset-sm-2">
                 <form id="userForm">
-                    <input type="number" id="score">
-                    <button type="reset" class="btn btn-danger">Reset</button>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <div class="mb-3">
+                        <label class="form-label" for="username">User Name</label>
+                        <input class="form-control" type="text" name="username" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="score">Score</label>
+                        <input class="form-control" type="number" name="score" id="score">
+                    </div>
+                    <div class="mb-3">
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <ul class="list-group" id="userList"></ul>
+            </div>
+        </div>
+        </div>
 
     <!-- <script src="js/basics.js"></script>
     <script src="js/vars.js"></script>
@@ -35,7 +54,7 @@
     <script src="js/dom.js"></script>
     <script src="js/comparing.js"></script>
     <script src="js/local-storage.js"></script> -->
-    <script src="js/forms.js"></script>
+    <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
