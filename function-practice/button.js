@@ -1,4 +1,4 @@
-let counter = 0;
+let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0;
 let counterDOM = document.getElementById('counter');
 
 let inDOM = document.querySelector('#increase');
@@ -15,5 +15,6 @@ function clickEvent() {
     else {
         counter--;
     }
+    localStorage.setItem('counter', counter);
     counterDOM.innerHTML = counter;
 }
